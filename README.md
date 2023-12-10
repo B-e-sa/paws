@@ -1,21 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simios 🐒
 
-## Getting Started
+Projeto desenvolvido com base no desafio técnico proposto pelo grupo Símios
 
-First, run the development server:
+Site hospedado (Vercel): https://simios-b-e-sa.vercel.app/
+
+## Preview:
+![preview](https://github.com/B-e-sa/simios/assets/101114950/8c3858e3-9c28-4843-b356-67a241b52f35)
+
+## Protótipo em Figma:
+https://www.figma.com/file/auw891th7Km2NrsSmx3sC2/Esbo%C3%A7o_Simios?type=design&mode=design&t=XAychl67Jhhh5Eq9-1
+
+## Tecnologias principais utilizadas:
+
+- Next.js
+- Tailwind
+
+## Rodando o projeto
+
+Inicie o server de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra em: [http://localhost:3000](http://localhost:3000) no seu browser de preferência para ver o resultado.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Você pode editar a página editando em `pages/index.tsx`. A página se atualiza automaticamente com base na edição.
