@@ -17,7 +17,7 @@ export default function Home() {
         <Adopted />
         <Faq />
         <div className='flex md:flex-row flex-col justify-between mx-5 w-[87vw]'>
-          <p className={'md:w-[20vw] w-full xl:mb-0 mb-6 mr-4'}>
+          <p className={'md:w-[30rem] w-full xl:mb-0 mb-6 mr-4'}>
             Inscreva-se em nosso newsletter para receber notícias sobre campanhas,
             eventos e novidades relacionadas a nosso grupo!
           </p>

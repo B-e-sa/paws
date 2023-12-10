@@ -38,7 +38,7 @@ export default function HowItWorks() {
     return (
         <Topic className="w-full px-12">
             <div className="flex flex-col items-center">
-                <h2 className="text-3xl mb-5 font-semibold">Como funciona?</h2>
+                <h2 className="md:text-3xl text-[1.8rem] mb-5 font-semibold">Como funciona?</h2>
                 <div className={clsx(
                     "xl:flex-row xl:h-fit",
                     "items-center flex-col flex w-full",

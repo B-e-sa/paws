@@ -15,7 +15,8 @@ export default function Banner() {
             )}>
                 <div className={clsx(
                     "xl:w-[50rem] mlg:ml-52",
-                    "ml-0 text-white pb-5",
+                    "xsm:text-start xsm:block flex-col items-center",
+                    "text-center flex ml-0 text-white pb-5",
                 )}>
                     <p className={clsx(
                         "xl:text-4xl",
@@ -32,7 +33,7 @@ export default function Banner() {
                     )}>
                         Bem-vindo à nossa comunidade de adoção! Aqui, a jornada para encontrar o seu novo melhor amigo começa.
                         Ao adotar um pet, você não apenas ganha um companheiro leal,
-                        mas também proporciona uma segunda chance a um animalzinho que precisa de um lar. <u className="cursor-pointer">Explore a página!</u>
+                        mas também proporciona uma segunda chance a um animalzinho que precisa de um lar. <u className="cursor-pointer hover:text-zinc-100">Explore a página!</u>
                     </p>
                 </div>
 
