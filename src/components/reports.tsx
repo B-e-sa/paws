@@ -42,38 +42,19 @@ export default function Reports() {
         {
             name: "Vinicius Rodrigues",
             image: "/reviews/vinicius.webp",
-            text: "",
+            text: "Equipe incrivelmente atenciosa. Meu novo cachorrinho já está em casa e feliz e cheio de personalidade, posso ver que foi bem cuidado.",
         }
     ]
 
     const reviewContainer = useRef<HTMLDivElement>(null);
 
-    const white = ' fill-white';
-    const zinc = ' fill-zinc-500';
-
-    const [leftArrowSettings, setLeftArrowSettings] = useState(zinc);
-    const [rightArrowSettings, setRightArrowSettings] = useState(white);
-
     const handleClick = (direction: DIRECTION): void => {
         const containerScroll = reviewContainer.current!
 
-        const scrollMaxWidth =
-            containerScroll.scrollWidth - containerScroll.clientWidth
-
         if (direction === DIRECTION.RIGHT) {
             containerScroll.scrollLeft += 250;
-
-            setRightArrowSettings(white)
-
-            if (containerScroll.scrollLeft == 0)
-                setLeftArrowSettings(zinc);
         } else {
             containerScroll.scrollLeft -= 250;
-
-            setLeftArrowSettings(white);
-
-            if (containerScroll.scrollLeft == scrollMaxWidth)
-                setRightArrowSettings(zinc);
         }
     };
 
@@ -84,7 +65,7 @@ export default function Reports() {
             <div className="flex w-full">
                 <ArrowIcon
                     onClick={() => handleClick(DIRECTION.LEFT)}
-                    className="sm:block hidden cursor-pointer w-[5rem] rotate-180"
+                    className="fill-red-600 bg-red-600 sm:block hidden cursor-pointer w-[5rem] rotate-180"
                 />
                 <div ref={reviewContainer} className="md:overflow-hidden overflow-auto flex pl-10 w-[100vw] ">
                     <div className="flex">
