@@ -65,7 +65,7 @@ export default function Reports() {
             <div className="flex w-full">
                 <ArrowIcon
                     onClick={() => handleClick(DIRECTION.LEFT)}
-                    className="fill-red-600 bg-red-600 sm:block hidden cursor-pointer w-[5rem] rotate-180"
+                    className="sm:block hidden cursor-pointer w-[5rem] rotate-180"
                 />
                 <div ref={reviewContainer} className="md:overflow-hidden overflow-auto flex pl-10 w-[100vw] ">
                     <div className="flex">
