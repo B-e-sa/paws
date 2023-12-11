@@ -12,6 +12,11 @@ interface Review {
     text: string;
 }
 
+enum DIRECTION {
+    LEFT,
+    RIGHT
+}
+
 export default function Reports() {
     const reviews: Review[] = [
         {
@@ -49,21 +54,21 @@ export default function Reports() {
     const [leftArrowSettings, setLeftArrowSettings] = useState(zinc);
     const [rightArrowSettings, setRightArrowSettings] = useState(white);
 
-    const handleClick = (action: string): void => {
+    const handleClick = (direction: DIRECTION): void => {
         const containerScroll = reviewContainer.current!
 
         const scrollMaxWidth =
             containerScroll.scrollWidth - containerScroll.clientWidth
 
-        if (action === 'right') {
-            containerScroll.scrollLeft -= 350;
+        if (direction === DIRECTION.RIGHT) {
+            containerScroll.scrollLeft += 250;
 
             setRightArrowSettings(white)
 
             if (containerScroll.scrollLeft == 0)
                 setLeftArrowSettings(zinc);
         } else {
-            containerScroll.scrollLeft += 350;
+            containerScroll.scrollLeft -= 250;
 
             setLeftArrowSettings(white);
 
@@ -77,8 +82,11 @@ export default function Reports() {
         <Topic>
             <Title>Relatos</Title>
             <div className="flex w-full">
-                <ArrowIcon onClick={() => { handleClick('left'); console.log("oi") }} className="cursor-pointer w-[5rem] rotate-180" />
-                <div ref={reviewContainer} className="flex pl-10 w-[100vw] overflow-hidden">
+                <ArrowIcon
+                    onClick={() => handleClick(DIRECTION.LEFT)}
+                    className="sm:block hidden cursor-pointer w-[5rem] rotate-180"
+                />
+                <div ref={reviewContainer} className="md:overflow-hidden overflow-auto flex pl-10 w-[100vw] ">
                     <div className="flex">
                         {
                             reviews.map(({ image, name, text }) => (
@@ -100,7 +108,10 @@ export default function Reports() {
                         }
                     </div>
                 </div>
-                <ArrowIcon onClick={() => console.log("OIII")} className="pointer-events-auto cursor-pointer w-[5rem]" />
+                <ArrowIcon
+                    onClick={() => handleClick(DIRECTION.RIGHT)}
+                    className="sm:block hidden pointer-events-auto cursor-pointer w-[5rem]"
+                />
             </div>
         </Topic>
     );

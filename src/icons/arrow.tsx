@@ -1,6 +1,7 @@
 export default function ArrowIcon(props: React.ComponentProps<'svg'>) {
     return (
         <svg
+            onClick={props.onClick}
             className={props.className}
             viewBox="0 0 24 24"
             fill="none"
