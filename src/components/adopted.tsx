@@ -4,6 +4,8 @@ import FemaleIcon from "@/icons/pets/female";
 import MaleIcon from "@/icons/pets/male";
 import clsx from "clsx";
 import Image from "next/image";
+import Title from "./title";
+import Topic from "./topic";
 
 interface IRecentAdopted {
     name: string;
@@ -68,9 +70,9 @@ export default function Adopted() {
     );
 
     return (
-        <div className="flex flex-col items-center w-full">
-            <h2 className="text-3xl mb-4 font-semibold">Recém adotados</h2>
-            <div className="md:px-10 lg:justify-evenly flex w-full px-2 overflow-x-auto">
+        <Topic>
+            <Title>Recém adotados</Title>
+            <div className="lg:justify-between flex w-full overflow-x-auto">
                 {
                     recentAdopted.map(({
                         image,
@@ -120,6 +122,6 @@ export default function Adopted() {
                     ))
                 }
             </div>
-        </div>
+        </Topic>
     );
 }

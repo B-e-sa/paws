@@ -3,34 +3,26 @@ import Topic from "./topic";
 
 export default function Faq() {
     const Button = ({ text }: { text: string }) => (
-        <button
-            className={clsx(
-                "md:w-[16rem] md:text-lg",
-                "w-[34vw] text-[0.8rem] bg-white p-[1vw] rounded-lg font-medium mx-2 hover:bg-zinc-100"
-            )}
-        >
+        <button className={clsx(
+            "md:text-lg md:w-[16rem]",
+            "xsm:w-[35vw] xsm:odd:mb-0",
+            "odd:mb-5 text-md bg-white p-4 rounded-lg font-medium mx-2 hover:bg-zinc-100"
+        )}>
             {text}
         </button>
     );
 
     return (
-        <Topic>
-            <div className="px-14 w-[87vw] flex flex-col items-center rounded-lg bg-lime-green-100 h-fit py-10">
-                <p
-                    className={clsx(
-                        "md:text-[1.8rem] md:w-fit",
-                        "w-[70vw] text-[1.5rem] font-bold mb-5"
-                    )}
-                >
-                    Possui mais alguma dúvida?
-                </p>
-                <p className="md:text-[1.3rem] text-[1rem] w-[70vw]">
-                    Consulte nossa área de perguntas frequentes ou entre em contato com o nosso suporte!
-                </p>
-                <div className="flex mt-5">
-                    <Button text="Perguntas frequentes" />
-                    <Button text="Suporte" />
-                </div>
+        <Topic className="rounded-lg bg-lime-green-100 px-5 py-10">
+            <p className="sm:text-3xl text-[1.6rem] font-bold mb-5">
+                Possui mais alguma dúvida?
+            </p>
+            <p className="md:text-[1.3rem] font-medium text-[1rem]">
+                Consulte nossa área de perguntas frequentes ou entre em contato com o nosso suporte!
+            </p>
+            <div className="xsm:flex-row flex mt-5 flex-col ">
+                <Button text="Perguntas frequentes" />
+                <Button text="Suporte" />
             </div>
         </Topic>
     );

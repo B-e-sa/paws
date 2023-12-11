@@ -1,9 +1,10 @@
 import Businessman from "@/icons/people/businessman";
-import PetPaw from "@/icons/pets/petPaw";
+import PetPaw from "@/icons/petPaw";
 import Pointing from "@/icons/people/pointing";
 import VacumCleaning from "@/icons/people/vacuumCleaning";
 import Topic from "./topic";
 import clsx from "clsx";
+import Title from "./title";
 
 interface ISteps {
     title: string;
@@ -36,35 +37,33 @@ export default function HowItWorks() {
     ];
 
     return (
-        <Topic className="w-full px-12">
-            <div className="flex flex-col items-center">
-                <h2 className="md:text-3xl text-[1.8rem] mb-5 font-semibold">Como funciona?</h2>
-                <div className={clsx(
-                    "xl:flex-row xl:h-fit",
-                    "items-center flex-col flex w-full",
-                )}>
-                    {steps.map(({ Icon, text, title }) => (
-                        <div
-                            className={clsx(
-                                "xl:items-center xl:flex-col",
-                                "flex even:my-4 w-[90vw] justify-center",
-                            )}
-                            key={title}
-                        >
-                            <Icon.type className={clsx(
-                                "xl:w-48 xl:min-w-32",
-                                "w-32 mr-6",
-                            )} />
-                            <div className={clsx(
-                                "xl:items-center xl:w-[17rem]",
-                                "flex flex-col w-[50rem]",
-                            )}>
-                                <p className="text-2xl mt-5 mb-2 font-semibold">{title}</p>
-                                <p>{text}</p>
-                            </div>
+        <Topic>
+            <Title>Como funciona?</Title>
+            <div className={clsx(
+                "xl:flex-row xl:h-fit",
+                "items-center flex-col flex w-full",
+            )}>
+                {steps.map(({ Icon, text, title }) => (
+                    <div
+                        className={clsx(
+                            "xl:items-center xl:flex-col",
+                            "flex even:my-4 w-[90vw] justify-center",
+                        )}
+                        key={title}
+                    >
+                        <Icon.type className={clsx(
+                            "xl:w-48 xl:min-w-32",
+                            "w-32 mr-6",
+                        )} />
+                        <div className={clsx(
+                            "xl:items-center xl:w-[17rem]",
+                            "flex flex-col w-[50rem]",
+                        )}>
+                            <p className="text-2xl mt-5 mb-2 font-semibold">{title}</p>
+                            <p>{text}</p>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
         </Topic>
     )

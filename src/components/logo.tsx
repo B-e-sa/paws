@@ -1,4 +1,4 @@
-import PawsIcon from "../icons/pets/paws";
+import PawsIcon from "../icons/paws";
 
 export default function Logo(
     props: React.ComponentProps<'div'>
