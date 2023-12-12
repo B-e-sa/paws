@@ -12,8 +12,6 @@ export default function Form() {
         />
     );
 
-    const a = Math.random() * 11 << 2
-
     return (
         <Topic className='md:flex-row justify-between mx-5'>
             <div className="md:w-3/6">
@@ -37,14 +35,36 @@ export default function Form() {
             </div>
             <form className="md:w-3/6">
                 <div className="flex">
-                    <Input className="w-2/5 mr-1" type="text" placeholder="Nome" />
-                    <Input className="w-3/5" type="text" placeholder="Sobrenome" />
+                    <Input
+                        className="w-2/5 mr-1"
+                        type="text"
+                        name="name"
+                        placeholder="Nome"
+                    />
+                    <Input
+                        className="w-3/5"
+                        type="text"
+                        name="last name"
+                        placeholder="Sobrenome"
+                    />
                 </div>
                 <div className="flex flex-col">
-                    <Input type="email" placeholder="Email" />
-                    <Input type="tel" placeholder="Número (opcional)" />
+                    <Input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                    <Input
+                        type="tel"
+                        name="number"
+                        placeholder="Número (opcional)"
+                    />
                 </div>
-                <button className="w-full hover:bg-lime-green-200 bg-lime-green-100 rounded-lg py-4 font-medium ">Inscrever-se</button>
+                <button
+                    className="w-full hover:bg-lime-green-200 bg-lime-green-100 rounded-lg py-4 font-medium"
+                >
+                    Inscrever-se
+                </button>
             </form>
         </Topic>
     );

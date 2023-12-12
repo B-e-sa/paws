@@ -13,7 +13,7 @@ export default function Faq() {
     );
 
     return (
-        <Topic className="rounded-lg bg-lime-green-100 px-5 py-10">
+        <Topic as="div" className="rounded-lg bg-lime-green-100 px-5 py-10">
             <p className="sm:text-3xl text-[1.6rem] font-bold mb-5">
                 Possui mais alguma dúvida?
             </p>

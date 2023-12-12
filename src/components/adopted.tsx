@@ -18,28 +18,28 @@ interface IRecentAdopted {
 export default function Adopted() {
     const recentAdopted: IRecentAdopted[] = [
         {
-            image: "/adopted/cat1.webp",
+            image: "/adopted/faisca.webp",
             name: "Faísca",
             race: "Gato",
             sex: "Fêmea",
             description: "Exploradora, é brincalhona e carinhosa, perfeita para famílias que buscam um gatinho animado.",
         },
         {
-            image: "/adopted/dog1.webp",
+            image: "/adopted/dan.webp",
             name: "Dan",
             race: "Cachorro",
             sex: "Macho",
             description: "Curioso e brincalhão, pronto para explorar cada canto da casa.",
         },
         {
-            image: "/adopted/dog2.webp",
+            image: "/adopted/pepito.webp",
             name: "Pepito",
             race: "Cachorro",
             sex: "Fêmea",
             description: "Elegante e tranquilo. Adora relaxar em lugares ensolarados, é excelente companheiro para todas as idades.",
         },
         {
-            image: "/adopted/cat2.webp",
+            image: "/adopted/pacoca.webp",
             name: "Paçoca",
             race: "Gato",
             sex: "Macho",

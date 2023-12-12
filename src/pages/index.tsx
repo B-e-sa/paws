@@ -12,8 +12,8 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <>
+      <Banner />
       <main className={`flex flex-col items-center ${inter.className}`}>
-        <Banner />
         <div className='flex flex-col w-screen px-10'>
           <HowItWorks />
           <Adopted />
