@@ -2,7 +2,7 @@
 
 Projeto desenvolvido com base no desafio técnico proposto pelo grupo Símios 🐒
 
-Site hospedado (Vercel): [https://simios-b-e-sa.vercel.app/](https://paws-project.vercel.app/)
+Site hospedado (Vercel): https://paws-project.vercel.app/
 
 ## Preview:
 ![preview](https://github.com/B-e-sa/simios/assets/101114950/8c3858e3-9c28-4843-b356-67a241b52f35)
