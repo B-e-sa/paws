@@ -1,6 +1,6 @@
-# Simios 🐒
+# Paws 🐾
 
-Projeto desenvolvido com base no desafio técnico proposto pelo grupo Símios
+Projeto desenvolvido com base no desafio técnico proposto pelo grupo Símios 🐒
 
 Site hospedado (Vercel): https://simios-b-e-sa.vercel.app/
 
